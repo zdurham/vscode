@@ -1,0 +1,189 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "!filesExplorerFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // global search
+  {
+    "key": "cmd+f",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+f",
+    "command": "workbench.view.search.focus",
+    "when": "editorFocus"
+  },
+  {
+    "key": "enter",
+    "command": "search.action.focusSearchList",
+    "when": "searchInputBoxFocus"
+  },
+  {
+    "key": "cmd+f",
+    "command": "search.action.focusQueryEditorWidget",
+    "when": "listFocus"
+  },
+  // navigation
+  // scm
+  {
+    "key": "cmd+k cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "cmd+k cmd+x",
+    "command": "workbench.extensions.action.showInstalledExtensions"
+  },
+  {
+    "key": "cmd+k cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+  },
+  // toggle terminal
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  /**
+      terminal split panel
+    */
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "editorFocus"
+  },
+  /**
+     * Emmet
+     **/
+  {
+    "key": "cmd+m cmd+i",
+    "command": "editor.emmet.action.balanceIn",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+o",
+    "command": "editor.emmet.action.balanceOut",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+m",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+e",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+r",
+    "command": "editor.emmet.action.updateTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+backspace",
+    "command": "editor.emmet.action.removeTag",
+    "when": "editorTextFocus"
+  },
+  /**
+     * Project Switching
+     **/
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.switchWindow"
+  },
+  /**
+     * IntelliSense
+     **/
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.gotoSymbol",
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.showAllSymbols"
+  },
+  /**
+      better jest
+    */
+  {
+    "key": "cmd+k cmd+r",
+    "command": "better-jest.run"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "better-jest.run-file"
+  },
+  {
+    "key": "cmd+k cmd+p",
+    "command": "better-jest.run-previous"
+  },
+  // Extra
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  }
+]
